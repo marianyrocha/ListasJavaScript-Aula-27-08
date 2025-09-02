@@ -1,1 +1,24 @@
 // Problema 6. Três amigos, Carlos, André e Felipe. decidiram rachar igualmente a conta de um bar. Faça um algoritmo para ler o valor total da conta e imprimir quanto cada um deve pagar, mas faça com que Carlos e André não paguem centavos. Ex: uma conta de R$101,53 resulta em R$33,00 para Carlos, R$33,00 para André e R$35,53 para Felipe.
+
+const readline = require("readline");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question("Qual o valor total da conta? R$ ", (valorTotal) => {
+  valorTotal = parseFloat(valorTotal);
+
+  const dividir = valorTotal / 3;
+
+  const carlos = Math.floor(dividir); 
+  const andre = Math.floor(dividir);  
+  const felipe = valorTotal - (carlos + andre); // Felipe paga o resto
+
+  console.log(`Carlos deve pagar: R$ ${carlos.toFixed(2)}`);
+  console.log(`André deve pagar: R$ ${andre.toFixed(2)}`);
+  console.log(`Felipe deve pagar: R$ ${felipe.toFixed(2)}`);
+
+  rl.close();
+});

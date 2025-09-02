@@ -28,4 +28,22 @@ console.log(numA==numB);
 let condicao1 = false;
 let condicao2 = true;
 
-// ******terminiar
+console.log("condicao1 =", condicao1);
+console.log("condicao2 =", condicao2);
+
+console.log("condicao1 && condicao2 =", condicao1 && condicao2);
+console.log("true && true  =", true && true);
+console.log("true  && false =", true && false);
+console.log("false && true  =", false && true);
+console.log("false && false =", false && false);
+
+console.log("condicao1 || condicao2 =", condicao1 || condicao2);
+console.log("true  || true  =", true || true);
+console.log("true  || false =", true || false);
+console.log("false || true  =", false || true);
+console.log("false || false =", false || false);
+
+console.log("!condicao1 =", !condicao1);
+console.log("!condicao2 =", !condicao2);
+console.log("!true  =", !true);
+console.log("!false =", !false);

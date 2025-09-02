@@ -12,14 +12,8 @@ while(num<=20){
   num++;
 }
 
-
 // 3. Usando um loop do...while, peça ao usuário para digitar um número maior que 10. Continue pedindo até que a condição seja satisfeita. (Em Node.js, você pode simular a entrada do usuário com readline ou simplesmente definir um valor e testar a lógica).
-// let numero = 15;
-// do{
-//   console.log(numero);
-//   numero -= 6;
-// }while(numero>10)
-//   console.log(numero);
+
 
 // 4. Crie um array de nomes. Use for...of para imprimir cada nome no console.
 let nomes = ["maria", "julia", "joão"];
